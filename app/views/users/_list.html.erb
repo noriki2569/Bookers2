@@ -1,13 +1,13 @@
 <h2>User info</h2>
 
-<%= image_tag current_user.get_profile_image(100,100) %>
+<%= image_tag user.get_profile_image(100,100) %>
 
-<p>name <%= current_user.name %></p>
+<p>name <%= user.name %></p>
 
-<p>introduction <%= current_user.introduction %></p>
+<p>introduction <%= user.introduction %></p>
 
 <div>
-    <%= link_to edit_user_path(current_user), class:"btn btn-outline-secondary btn-block" do %>
+    <%= link_to edit_user_path(user.id), class:"btn btn-outline-secondary btn-block" do %>
     <i class="fa-solid fa-user-gear" style="color: #cecece;"></i>
     <% end %>
 </div>
